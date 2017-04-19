@@ -1,2 +1,2 @@
-# dr-composer
-Dr Composer is docker container managet tool for developers
+# Dr Composer
+Docker container managet tool for developers
