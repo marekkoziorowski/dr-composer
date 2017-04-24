@@ -1,0 +1,15 @@
+version: '2.1'
+
+services:
+
+  drcomposer:
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/home/app/drcomposer
+      - ./docker-compose.yml:/home/app/drcomposer/compositions/docker-compose-1.yml
+      - ./docker-compose.yml:/home/app/drcomposer/compositions/docker-compose-2.yml
+      - ./docker-compose.yml:/home/app/drcomposer/compositions/docker-compose-3.yml
